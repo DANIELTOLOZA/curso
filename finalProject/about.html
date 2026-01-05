@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - TravelHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-globe-americas"></i>
+                <span>TravelHub</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="about.html" class="nav-link active">Sobre Nosotros</a></li>
+                <li><a href="contact.html" class="nav-link">Contacto</a></li>
+            </ul>
+            
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar destinos...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+                <button id="clearBtn">Limpiar</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="about-section">
+            <h1>Sobre TravelHub</h1>
+            
+            <div class="about-content">
+                <div class="mission">
+                    <h2><i class="fas fa-bullseye"></i> Nuestra Misión</h2>
+                    <p>En TravelHub, nos apasiona conectar a las personas con destinos que resuenan con sus sueños de viaje. Creemos que cada viaje es una oportunidad para crear recuerdos inolvidables y expandir horizontes.</p>
+                </div>
+                
+                <div class="values">
+                    <h2><i class="fas fa-heart"></i> Nuestros Valores</h2>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <i class="fas fa-user-check"></i>
+                            <h3>Enfoque Centrado en el Usuario</h3>
+                            <p>Priorizamos las necesidades y preferencias de cada viajero para ofrecer recomendaciones verdaderamente personalizadas.</p>
+                        </div>
+                        <div class="value-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Información Confiable</h3>
+                            <p>Verificamos cada recomendación con viajeros experimentados y fuentes locales para garantizar información precisa.</p>
+                        </div>
+                        <div class="value-card">
+                            <i class="fas fa-globe"></i>
+                            <h3>Sostenibilidad</h3>
+                            <p>Promovemos un turismo responsable que respeta las culturas locales y protege el medio ambiente.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team">
+                    <h2><i class="fas fa-users"></i> Nuestro Equipo</h2>
+                    <p>Somos un equipo diverso de apasionados viajeros, desarrolladores y especialistas en turismo. Combinamos nuestra experiencia personal con datos actualizados para ofrecerte las mejores recomendaciones.</p>
+                    <p>Nuestros expertos han visitado personalmente más de 80 países, lo que nos permite ofrecerte perspectivas auténticas y consejos prácticos.</p>
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Equipo de TravelHub" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-top: 20px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 TravelHub - Recomendaciones de Viaje. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

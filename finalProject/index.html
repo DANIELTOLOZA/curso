@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelHub - Descubre tu destino ideal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-globe-americas"></i>
+                <span>TravelHub</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                <li><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
+                <li><a href="contact.html" class="nav-link">Contacto</a></li>
+            </ul>
+            
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar destinos...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+                <button id="clearBtn">Limpiar</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Descubre tu próximo destino ideal</h1>
+            <p>Recomendaciones personalizadas basadas en tus preferencias de viaje</p>
+            <a href="#recommendations" class="btn">Explorar Destinos</a>
+        </div>
+    </header>
+
+    <!-- Sección de recomendaciones -->
+    <main class="container">
+        <section id="recommendations" class="recommendations-section">
+            <h2>Recomendaciones Populares</h2>
+            <div class="recommendations-grid">
+                
+                <!-- Recomendación de playa -->
+                <div class="recommendation-card" id="beach-recommendation">
+                    <div class="card-header">
+                        <h3>Paraísos Playeros</h3>
+                        <span class="category-tag">Playa</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Descubre las playas más exóticas y relajantes del mundo. Desde el Caribe hasta el Sudeste Asiático, tenemos recomendaciones para todos los tipos de viajeros playeros.</p>
+                        <div class="image-gallery">
+                            <div class="image-container">
+                                <img src="images/beach1.jpg" alt="Playa de arena blanca con palmeras">
+                                <p class="image-caption">Maldives - Arena blanca y aguas turquesas</p>
+                            </div>
+                            <div class="image-container">
+                                <img src="images/beach2.jpg" alt="Atardecer en la playa">
+                                <p class="image-caption">Bali - Atardeceres inolvidables</p>
+                            </div>
+                        </div>
+                        <button class="btn-secondary">Ver más playas</button>
+                    </div>
+                </div>
+
+                <!-- Recomendación de templo -->
+                <div class="recommendation-card" id="temple-recommendation">
+                    <div class="card-header">
+                        <h3>Templos y Cultura</h3>
+                        <span class="category-tag">Templo</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Explora los templos más impresionantes y lugares históricos alrededor del mundo. Sumérgete en culturas milenarias y arquitectura sorprendente.</p>
+                        <div class="image-gallery">
+                            <div class="image-container">
+                                <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Templo antiguo en Angkor Wat">
+                                <p class="image-caption">Angkor Wat, Camboya - Patrimonio de la Humanidad</p>
+                            </div>
+                            <div class="image-container">
+                                <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Templo en Kyoto">
+                                <p class="image-caption">Kinkaku-ji, Kyoto - El Pabellón Dorado</p>
+                            </div>
+                        </div>
+                        <button class="btn-secondary">Ver más templos</button>
+                    </div>
+                </div>
+
+                <!-- Recomendación basada en país -->
+                <div class="recommendation-card" id="country-recommendation">
+                    <div class="card-header">
+                        <h3>Japón - Tierra del Sol Naciente</h3>
+                        <span class="category-tag">País</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Descubre la perfecta combinación de tradición y modernidad. Desde los templos de Kyoto hasta el bullicio de Tokio, Japón tiene algo para cada viajero.</p>
+                        <div class="image-gallery">
+                            <div class="image-container">
+                                <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Monte Fuji con cerezos en flor">
+                                <p class="image-caption">Monte Fuji - Icono natural de Japón</p>
+                            </div>
+                            <div class="image-container">
+                                <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Calle de Tokyo de noche">
+                                <p class="image-caption">Shibuya, Tokyo - Cruce más famoso del mundo</p>
+                            </div>
+                        </div>
+                        <button class="btn-secondary">Ver más de Japón</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 TravelHub - Recomendaciones de Viaje. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
